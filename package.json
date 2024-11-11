@@ -1,0 +1,27 @@
+{
+  "name": "gerenciadoranimes",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "directories": {
+    "doc": "docs"
+  },
+  "scripts": {
+    "dev": "tsx --env-file=.env src/server.ts",
+    "watch": "tsx  watch --env-file=.env src/server.ts",
+    "start": "tsup src",
+    "start:dist": "npm run dist && --env-file=.env node/server.js "
+  },
+  "keywords": [],
+  "author": "Vitório Corrêa Pereira",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/node": "^22.9.0",
+    "tsup": "^8.3.5",
+    "tsx": "^4.19.2",
+    "typescript": "^5.6.3"
+  },
+  "dependencies": {
+    "gerenciadoranimes": "file:"
+  }
+}
